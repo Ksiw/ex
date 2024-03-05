@@ -13,11 +13,14 @@ void main()
 {
 #if (WATCHDOG == true)
     watchdog_init();
-#endif
-    __enable_irq();
+#endif      
+    board_init();
     flash_init();
     gpio_init();
     timers_init();
+    uart_init();
+    uart_set_rx_callback(usart3*, void uart_rx_callback(&data, len););
+    uart_set_tx_callback(uart_tx_callback());
     main_handler_init();
 
 #if (BOOTLOADER == true)

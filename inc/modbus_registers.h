@@ -13,6 +13,7 @@
 //Дискретные регистры (Read-only)
 #define DISCRETE_REGISTER_SENSOR1   REG_DISCRETE_START  // Регистр для чтения состояния реле 1
 /*...*/
+
 //Регистры катушек (Coils) (Read/Write)
 #define COIL_REGISTER_RELAY1        REG_COILS_START  // Регистр для управления реле #1
 #define COIL_REGISTER_RELAY2        (REG_COILS_START + 1)  // Регистр для управления реле #2
